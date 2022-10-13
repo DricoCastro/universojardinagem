@@ -8,4 +8,6 @@ export const HomeHolder = styled.div`
     justify-content:center;
     min-width:100%;
     min-height:80vh; 
+    padding-left: clamp(1rem, 10.42vw, 12.5rem);
+    padding-right: clamp(1rem, 14.58vw, 12.5rem);
 `;
