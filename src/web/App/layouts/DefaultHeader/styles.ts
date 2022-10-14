@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import { COLORS } from "../../../../../utils/colors";
 
-
 export const HomeHeaderHolder = styled.div`
     display: flex;
     justify-content: center;
@@ -15,8 +14,7 @@ export const HomeHeaderHolder = styled.div`
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color:${COLORS.white};
-    background-color:${COLORS.parsley}; 
+    color:${COLORS.mirage};
     @media (max-width: 599px) {
     padding-left: 10px;
     padding-right: 10px;
@@ -86,8 +84,7 @@ export const HolderTitleIcon = styled.div`
 
 export const TitlesHeader = styled.h1`
   font-size:20px;
-  color:${COLORS.white};
-  font-weight:400;
+  font-weight:500;
   margin-left:8px;
   padding-top:4px;
   @media (max-width: 1250px) {
@@ -98,8 +95,7 @@ export const TitlesHeader = styled.h1`
 
 export const TitleHeaderMoney = styled.h1`
   font-size:20px;
-  color:${COLORS.white};
-  font-weight:400;
+  font-weight:500;
   margin-left:4px;
   padding-top:4px;
   @media (max-width: 1250px) {

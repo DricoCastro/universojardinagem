@@ -1,3 +1,9 @@
+import Image from "next/image";
+import { PrimaryIcon } from "../../../components/PrimaryIcon";
+import { IconsEnum } from "../../../components/PrimaryIcon/enum/icons";
+import { COLORS } from "../../../../../utils/colors";
+import { useState } from "react";
+import { Divider, IconButton, Menu } from "@mui/material";
 import {
   HeaderContainer,
   HolderLogoHeader,
@@ -10,25 +16,26 @@ import {
   TitleMenuDrawer,
   TitlesHeader,
 } from "./styles";
+
 const logo = require("../../../../../public/images/logo_cut.png");
-import Image from "next/image";
-import { PrimaryIcon } from "../../../components/PrimaryIcon";
-import { IconsEnum } from "../../../components/PrimaryIcon/enum/icons";
-import { COLORS } from "../../../../../utils/colors";
-import { useState } from "react";
-import { Divider, IconButton, Menu } from "@mui/material";
+
 export const DefaultHeader = () => {
   const [drawer, setDrawer] = useState<null | HTMLElement>(null);
+
   const openDrawer = drawer !== null;
+
   const handleClose = () => {
     setDrawer(null);
   };
+
   function openUserMenu(event: React.MouseEvent<HTMLElement>) {
     setDrawer(event.currentTarget);
   }
+
   function onTapMenu() {
     alert("Em Construção");
   }
+
   return (
     <HomeHeaderHolder>
       <HeaderContainer>
@@ -38,8 +45,8 @@ export const DefaultHeader = () => {
             style={{ cursor: "pointer" }}
             src={logo}
             alt="logoHeader"
-            width={100}
-            height={100}
+            width={80}
+            height={80}
           />
         </HolderLogoHeader>
         <HolderTitlesHeader>
@@ -47,7 +54,7 @@ export const DefaultHeader = () => {
             <PrimaryIcon
               size={"18px"}
               icon={IconsEnum.HOME_ICON}
-              fill={COLORS.white}
+              fill={COLORS.crete}
             />
             <TitlesHeader>Home</TitlesHeader>
           </HolderTitleIcon>
@@ -56,7 +63,7 @@ export const DefaultHeader = () => {
             <PrimaryIcon
               size={"18px"}
               icon={IconsEnum.SERVICES_ICON}
-              fill={COLORS.white}
+              fill={COLORS.crete}
             />
             <TitlesHeader>Serviços</TitlesHeader>
           </HolderTitleIcon>
@@ -65,7 +72,7 @@ export const DefaultHeader = () => {
             <PrimaryIcon
               size={"18px"}
               icon={IconsEnum.PORTFOLIO_ICON}
-              fill={COLORS.white}
+              fill={COLORS.crete}
             />
             <TitlesHeader>Portifólio</TitlesHeader>
           </HolderTitleIcon>
@@ -74,8 +81,8 @@ export const DefaultHeader = () => {
             <PrimaryIcon
               size={"18px"}
               icon={IconsEnum.CIPHER_ICON}
-              stroke={COLORS.white}
-              fill={COLORS.white}
+              stroke={COLORS.crete}
+              fill={COLORS.crete}
             />
             <TitleHeaderMoney>Orçamento</TitleHeaderMoney>
           </HolderTitleIcon>
@@ -84,7 +91,7 @@ export const DefaultHeader = () => {
             <PrimaryIcon
               size={"18px"}
               icon={IconsEnum.CART_STORE_ICON}
-              fill={COLORS.white}
+              fill={COLORS.crete}
             />
             <TitlesHeader>Loja</TitlesHeader>
           </HolderTitleIcon>
@@ -101,7 +108,7 @@ export const DefaultHeader = () => {
             <PrimaryIcon
               size={"25px"}
               icon={IconsEnum.MENU_ICON}
-              fill={COLORS.white}
+              fill={COLORS.crete}
             />
           </IconButton>
         </HolderMenuIcon>
