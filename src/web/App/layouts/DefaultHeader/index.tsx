@@ -155,7 +155,7 @@ export const DefaultHeader = () => {
               <PrimaryIcon
                 size={"18px"}
                 icon={IconsEnum.HOME_ICON}
-                fill={COLORS.black}
+                fill={COLORS.crete}
               />
               <TitleMenuDrawer>Home</TitleMenuDrawer>
             </MenuItemStyledComponent>
@@ -166,7 +166,7 @@ export const DefaultHeader = () => {
               <PrimaryIcon
                 size={"18px"}
                 icon={IconsEnum.SERVICES_ICON}
-                fill={COLORS.black}
+                fill={COLORS.crete}
               />
               <TitleMenuDrawer>Serviços</TitleMenuDrawer>
             </MenuItemStyledComponent>
@@ -177,7 +177,7 @@ export const DefaultHeader = () => {
               <PrimaryIcon
                 size={"18px"}
                 icon={IconsEnum.PORTFOLIO_ICON}
-                fill={COLORS.black}
+                fill={COLORS.crete}
               />
               <TitleMenuDrawer>Portifólio</TitleMenuDrawer>
             </MenuItemStyledComponent>
@@ -188,7 +188,7 @@ export const DefaultHeader = () => {
               <PrimaryIcon
                 size={"18px"}
                 icon={IconsEnum.CIPHER_ICON}
-                fill={COLORS.black}
+                fill={COLORS.crete}
               />
               <TitleMenuDrawer>Orçamento</TitleMenuDrawer>
             </MenuItemStyledComponent>
@@ -199,7 +199,7 @@ export const DefaultHeader = () => {
               <PrimaryIcon
                 size={"18px"}
                 icon={IconsEnum.CART_STORE_ICON}
-                fill={COLORS.black}
+                fill={COLORS.crete}
               />
               <TitleMenuDrawer>Loja</TitleMenuDrawer>
             </MenuItemStyledComponent>

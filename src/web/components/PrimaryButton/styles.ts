@@ -27,9 +27,9 @@ export const PrimaryButtonContainer = styled.button`
 
 export const PrimaryButtonText = styled.a`
     font-size:16px;
-    font-weight:400;
+    font-weight:500;
     color:${COLORS.white};
     @media (max-width: 599px) {
-    font-size:12px;
+    font-size:14px;
   }
 `;
