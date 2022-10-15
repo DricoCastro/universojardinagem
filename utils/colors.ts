@@ -17,6 +17,7 @@ export const COLORS = {
   sandwisp:"#ECF39E",
   apple:"#32CD30",
   parsley:"#2C5E1A",
+  carafe:"#6B3A2C",
 };
 
 export const DEFAULT_COLORS = {
@@ -37,6 +38,7 @@ export const DEFAULT_COLORS = {
     --sandwisp: ${COLORS["sandwisp"]};
     --apple: ${COLORS["apple"]};
     --parsley: ${COLORS["parsley"]};
+    --carafe: ${COLORS["carafe"]};
     
   `,
 };
