@@ -71,11 +71,22 @@ export const HolderTitleIcon = styled.div`
   padding-left:5px;
   padding-right:5px;
   cursor: pointer;
-  transition: 0.05s ease-out;
-  :hover{
-    box-shadow: 0 3px 10px ${COLORS.celtic};
-  transform: translate3d(0,-5px,0);
-  }
+  h1:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+h1:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
   @media (max-width: 900px) {
     display:none;
   }
@@ -83,24 +94,30 @@ export const HolderTitleIcon = styled.div`
 `;
 
 export const TitlesHeader = styled.h1`
-  font-size:20px;
-  font-weight:500;
+  font-size:18px;
+  font-weight:600;
   margin-left:8px;
   padding-top:4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
   @media (max-width: 1250px) {
     padding-top:0px;
-    font-size:18px;
   }
 `;
 
 export const TitleHeaderMoney = styled.h1`
-  font-size:20px;
-  font-weight:500;
-  margin-left:4px;
+  font-size:18px;
+  font-weight:600;
+  margin-left:8px;
   padding-top:4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
   @media (max-width: 1250px) {
     padding-top:0px;
-    font-size:18px;
   }
 `;
 
