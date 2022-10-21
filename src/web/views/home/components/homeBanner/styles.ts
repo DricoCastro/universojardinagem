@@ -14,21 +14,27 @@ export const EventBannerStyle = styled.div<EventBannerContainerProps>`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-    
+  @media (max-width: 799px) {
+    height:auto;
+  }
   `;
 
  export const Blur = styled.div`
   width:100%;
   height:100%;
-  backdrop-filter:blur(3px);
+  backdrop-filter:blur(0px);
   padding-left: clamp(1rem, 10.42vw, 12.5rem);
   padding-right: clamp(1rem, 10.42vw, 12.5rem);
   display:flex;
   align-items:top;
   justify-content:top;
+  @media (max-width: 799px) {
+  padding-bottom:90px;
+  }
   @media (max-width: 599px) {
   padding-left:10px;
   padding-right:10px;
+  padding-bottom:90px;
   }
  `;
 
