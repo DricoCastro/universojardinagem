@@ -95,7 +95,7 @@ h1:hover:after {
 
 export const TitlesHeader = styled.h1`
   font-size:18px;
-  font-weight:600;
+  font-weight:500;
   margin-left:8px;
   padding-top:4px;
   text-transform: uppercase;
@@ -109,7 +109,7 @@ export const TitlesHeader = styled.h1`
 
 export const TitleHeaderMoney = styled.h1`
   font-size:18px;
-  font-weight:600;
+  font-weight:500;
   margin-left:8px;
   padding-top:4px;
   text-transform: uppercase;

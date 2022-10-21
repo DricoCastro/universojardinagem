@@ -90,6 +90,7 @@ export const SubTitleCardTop = styled.a`
 `;
 
 export const DescriptionCardTop = styled.a`
+  line-height:22px; 
   text-align:center;
   font-size:16px;
   margin-top:40px;
@@ -100,6 +101,9 @@ export const DescriptionCardTop = styled.a`
   @media (max-width: 900px) {
   margin-top:45px;
   font-size:16px;
+  }
+  @media (max-width: 799px) {
+  background-color: rgba(0,0,0, 0.4);
   }
   @media (max-width: 499px) {
   font-size:14px;
