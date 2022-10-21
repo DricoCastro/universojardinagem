@@ -89,6 +89,9 @@ export const PanelFooterBottomSocialMediaContainer = styled.div`
     flex-direction: row;
     margin-top: clamp(1.04vw, 1.04vw, 1.25rem);
     margin-bottom: clamp(2.8vw, 2.8vw, 2.63rem);
+    @media (max-width: 1049px) {
+        margin-top:20px;
+    }
 `;
 
 export const PanelFooterBottomSocialMediaButtonContainer = styled.div`

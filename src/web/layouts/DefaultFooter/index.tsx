@@ -59,6 +59,7 @@ export const DeafultFooter = () => {
               <PanelFooterBottomSocialMediaButtonContainer>
                 <Link href="/">
                   <PrimaryIcon
+                    size="18px"
                     fill={COLORS.crete}
                     icon={IconsEnum.FACEBOOK_ICON}
                   />
@@ -67,6 +68,7 @@ export const DeafultFooter = () => {
               <PanelFooterBottomSocialMediaButtonContainer>
                 <Link href="/">
                   <PrimaryIcon
+                    size="18px"
                     fill={COLORS.crete}
                     icon={IconsEnum.INSTAGRAM_ICON}
                   />
@@ -75,6 +77,7 @@ export const DeafultFooter = () => {
               <PanelFooterBottomSocialMediaButtonContainer>
                 <Link href="/">
                   <PrimaryIcon
+                    size="18px"
                     fill={COLORS.crete}
                     icon={IconsEnum.WHATSAPP_ICON}
                   />
