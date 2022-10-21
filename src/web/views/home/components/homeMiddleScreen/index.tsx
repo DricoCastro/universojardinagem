@@ -1,17 +1,27 @@
 import Image from "next/image";
-import { CardServices } from "./components/cardServices";
-import { TitleMiddleScreen, EventBannerStyle, Blur } from "./styles";
+import ServicesCarousel from "./components/homeCarousel";
+import {
+  TitleMiddleScreen,
+  EventBannerStyle,
+  Blur,
+  SubTitleMiddleScreen,
+  HolderTitleMiddleScreen,
+} from "./styles";
 const logo = require("../../../../../../public/images/logo-removebg.png");
-const ImageBackground = "/images/backgroundMiddle.jpg";
+const ImageBackground = "/images/background-middle-screen.jpg";
 export const HomeTypesOfServices = () => {
   return (
     <EventBannerStyle url={ImageBackground}>
       <Blur>
-        <Image src={logo} alt="logo" width={200} height={200}></Image>
-        <TitleMiddleScreen>
-          Confira abaixo os serviços que oferecemos, <br /> clique e saiba mais!
-        </TitleMiddleScreen>
-        <CardServices />
+        <Image src={logo} alt="logo" width={150} height={150}></Image>
+        <HolderTitleMiddleScreen>
+          <TitleMiddleScreen>
+            Confira abaixo os <a>serviços</a> que oferecemos,
+          </TitleMiddleScreen>
+          <SubTitleMiddleScreen>clique e saiba mais!</SubTitleMiddleScreen>
+        </HolderTitleMiddleScreen>
+
+        <ServicesCarousel />
       </Blur>
     </EventBannerStyle>
   );
