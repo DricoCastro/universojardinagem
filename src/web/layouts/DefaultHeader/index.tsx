@@ -56,7 +56,7 @@ export const DefaultHeader = () => {
               icon={IconsEnum.HOME_ICON}
               fill={COLORS.crete}
             />
-            <TitlesHeader>Home</TitlesHeader>
+            <TitlesHeader>HOME</TitlesHeader>
           </HolderTitleIcon>
 
           <HolderTitleIcon onClick={onTapMenu}>
@@ -65,7 +65,7 @@ export const DefaultHeader = () => {
               icon={IconsEnum.SERVICES_ICON}
               fill={COLORS.crete}
             />
-            <TitlesHeader>Serviços</TitlesHeader>
+            <TitlesHeader>SERVIÇOS</TitlesHeader>
           </HolderTitleIcon>
 
           <HolderTitleIcon onClick={onTapMenu}>
@@ -74,7 +74,7 @@ export const DefaultHeader = () => {
               icon={IconsEnum.PORTFOLIO_ICON}
               fill={COLORS.crete}
             />
-            <TitlesHeader>Portifólio</TitlesHeader>
+            <TitlesHeader>PORTFÓLIO</TitlesHeader>
           </HolderTitleIcon>
 
           <HolderTitleIcon onClick={onTapMenu}>
@@ -84,7 +84,7 @@ export const DefaultHeader = () => {
               stroke={COLORS.crete}
               fill={COLORS.crete}
             />
-            <TitleHeaderMoney>Orçamento</TitleHeaderMoney>
+            <TitleHeaderMoney>ORÇAMENTO</TitleHeaderMoney>
           </HolderTitleIcon>
 
           <HolderTitleIcon onClick={onTapMenu}>
@@ -93,7 +93,7 @@ export const DefaultHeader = () => {
               icon={IconsEnum.CART_STORE_ICON}
               fill={COLORS.crete}
             />
-            <TitlesHeader>Loja</TitlesHeader>
+            <TitlesHeader>LOJA</TitlesHeader>
           </HolderTitleIcon>
         </HolderTitlesHeader>
         <HolderMenuIcon>

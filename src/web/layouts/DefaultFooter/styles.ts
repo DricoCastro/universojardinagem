@@ -37,6 +37,7 @@ export const PanelFooterTopContainer = styled.div`
             font-weight: 300;
             color: var(--gray);
                 @media (max-width: 1049px) {
+                    text-align:center;
                     font-size:14px;
             }
         }
