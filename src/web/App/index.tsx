@@ -2,8 +2,8 @@ import moment from "moment-timezone";
 import type { AppProps } from "next/app";
 import { FC } from "react";
 import { PrimaryHead } from "../components/PrimaryHead";
-import { DeafultFooter } from "./layouts/DefaultFooter";
-import { DefaultHeader } from "./layouts/DefaultHeader";
+import { DeafultFooter } from "../layouts/DefaultFooter";
+import { DefaultHeader } from "../layouts/DefaultHeader";
 import { GlobalStyle } from "./styles";
 
 export const App: FC<AppProps> = ({ Component, pageProps }) => {

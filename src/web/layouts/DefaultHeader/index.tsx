@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { PrimaryIcon } from "../../../components/PrimaryIcon";
-import { IconsEnum } from "../../../components/PrimaryIcon/enum/icons";
-import { COLORS } from "../../../../../utils/colors";
+import { PrimaryIcon } from "../../components/PrimaryIcon";
+import { IconsEnum } from "../../components/PrimaryIcon/enum/icons";
+import { COLORS } from "../../../../utils/colors";
 import { useState } from "react";
 import { Divider, IconButton, Menu } from "@mui/material";
 import {
@@ -17,7 +17,7 @@ import {
   TitlesHeader,
 } from "./styles";
 
-const logo = require("../../../../../public/images/logo_cut.png");
+const logo = require("../../../../public/images/logo_cut.png");
 
 export const DefaultHeader = () => {
   const [drawer, setDrawer] = useState<null | HTMLElement>(null);
