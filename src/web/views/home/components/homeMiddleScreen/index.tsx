@@ -20,7 +20,6 @@ export const HomeTypesOfServices = () => {
           </TitleMiddleScreen>
           <SubTitleMiddleScreen>clique e saiba mais!</SubTitleMiddleScreen>
         </HolderTitleMiddleScreen>
-
         <ServicesCarousel />
       </Blur>
     </EventBannerStyle>

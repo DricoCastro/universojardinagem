@@ -1,4 +1,5 @@
 import { HomeBanner } from "./components/homeBanner";
+import { FaqSection } from "./components/homeFaqSection";
 import { HomeTypesOfServices } from "./components/homeMiddleScreen";
 import { HomeHolder } from "./styles";
 
@@ -7,6 +8,7 @@ export const HomePage = () => {
     <HomeHolder>
       <HomeBanner />
       <HomeTypesOfServices />
+      <FaqSection />
     </HomeHolder>
   );
 };
