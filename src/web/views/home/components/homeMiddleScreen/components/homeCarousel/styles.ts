@@ -58,6 +58,6 @@ export const CardTitle = styled.span`
     padding:5px 10px;
     border-radius:5px;
     @media (max-width: 650px) {
-        font-size:18px;
+        font-size:20px;
   }
 `;
