@@ -11,6 +11,7 @@ import {
   HolderCard,
   Card,
   CardTitle,
+  HolderImage,
 } from "./styles";
 import Image from "next/image";
 
@@ -18,13 +19,15 @@ export default function ServicesCategories() {
   const servicesInfo = services.map((service, i) => (
     <HolderCard key={i}>
       <Card>
-        <Image
-          width={200}
-          height={200}
-          style={{ borderRadius: "10px" }}
-          src={service.image}
-          alt="serviceImage"
-        ></Image>
+        <HolderImage>
+          <Image
+            width={250}
+            height={250}
+            style={{ borderRadius: "10px" }}
+            src={service.image}
+            alt="serviceImage"
+          />
+        </HolderImage>
         <CardTitle>{service.title}</CardTitle>
       </Card>
     </HolderCard>

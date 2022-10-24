@@ -5,8 +5,8 @@ export const HomeHeaderHolder = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: clamp(1rem, 1.3vw, 1.56rem);
-    padding-bottom: clamp(1rem, 1.3vw, 1.56rem);
+    padding-top: clamp(0.8rem, 1vw, 1.26rem);
+    padding-bottom: clamp(0.8rem, 10vw, 1.26rem);
     padding-left: clamp(1rem, 10.42vw, 12.5rem);
     padding-right: clamp(1rem, 10.42vw, 12.5rem);
     -moz-user-select: none;
