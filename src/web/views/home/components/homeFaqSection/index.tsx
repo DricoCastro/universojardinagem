@@ -27,7 +27,7 @@ export const FaqSection = () => {
         </HolderTitleFaqScreen>
         <Accordion style={{ width: "100%" }}>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMoreIcon color="primary" />}
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
@@ -42,7 +42,7 @@ export const FaqSection = () => {
         </Accordion>
         <Accordion style={{ width: "100%" }}>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMoreIcon color="primary" />}
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
@@ -57,7 +57,7 @@ export const FaqSection = () => {
         </Accordion>
         <Accordion style={{ width: "100%" }}>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMoreIcon color="primary" />}
             aria-controls="panel3a-content"
             id="panel3a-header"
           >
@@ -72,7 +72,7 @@ export const FaqSection = () => {
         </Accordion>
         <Accordion style={{ width: "100%" }}>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMoreIcon color="primary" />}
             aria-controls="panel4a-content"
             id="panel4a-header"
           >
@@ -87,7 +87,7 @@ export const FaqSection = () => {
         </Accordion>
         <Accordion style={{ width: "100%" }}>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ExpandMoreIcon color="primary" />}
             aria-controls="panel5a-content"
             id="panel5a-header"
           >
