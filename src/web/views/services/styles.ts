@@ -31,7 +31,7 @@ export const TitleServicesPage = styled.span`
     }
     @media (max-width: 499px) {
     width:100%;
-    font-size:24px;
+    font-size:28px;
     }
 `;
 
@@ -54,6 +54,7 @@ export const HolderServicesText = styled.div`
     @media (max-width: 1050px) {
         width:100%;
         align-items:center;
+        margin-bottom:40px;
     }
 `;
 
@@ -70,7 +71,7 @@ export const ServicesTitle = styled.span`
     }
     @media (max-width: 499px) {
     width:100%;
-    font-size:20px;
+    font-size:24px;
     }
 `;
 

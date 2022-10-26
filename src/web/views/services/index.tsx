@@ -39,8 +39,8 @@ export const ServicesPage = () => {
           <Image
             src={paisagismIcon}
             alt="serviceIcon"
-            width={400}
-            height={400}
+            width={350}
+            height={350}
           ></Image>
         </ServicesContainerIconAndText>
       </ServicesContainer>
@@ -56,8 +56,8 @@ export const ServicesPage = () => {
           <Image
             src={podeIcon}
             alt="serviceIcon"
-            width={400}
-            height={400}
+            width={350}
+            height={350}
           ></Image>
           <HolderServicesText>
             <ServicesTitle>Podas</ServicesTitle>
@@ -97,8 +97,8 @@ export const ServicesPage = () => {
           <Image
             src={plantingIcon}
             alt="serviceIcon"
-            width={400}
-            height={400}
+            width={350}
+            height={350}
           ></Image>
         </ServicesContainerIconAndText>
       </ServicesContainer>
@@ -114,8 +114,8 @@ export const ServicesPage = () => {
           <Image
             src={garderingIcon}
             alt="serviceIcon"
-            width={400}
-            height={400}
+            width={350}
+            height={350}
           ></Image>
           <HolderServicesText>
             <ServicesTitle>Jardinagem</ServicesTitle>
@@ -155,8 +155,8 @@ export const ServicesPage = () => {
           <Image
             src={project3dIcon}
             alt="serviceIcon"
-            width={400}
-            height={400}
+            width={350}
+            height={350}
           ></Image>
         </ServicesContainerIconAndText>
       </ServicesContainer>
