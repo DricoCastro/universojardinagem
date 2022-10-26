@@ -13,6 +13,7 @@ import {
   PanelFooterTopContainer,
 } from "./styles";
 import { COLORS } from "../../../../utils/colors";
+import { useRouter } from "next/router";
 
 const logo = require("../../../../public/images/logo_cut.png");
 
@@ -41,7 +42,7 @@ export const DeafultFooter = () => {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/">Serviços</Link>
+              <Link href="/servicos-prestados">Serviços</Link>
             </li>
             <li>
               <Link href="/">Portfólio</Link>

@@ -49,6 +49,7 @@ export const HolderImage = styled.div`
 
 export const CardTitle = styled.span`
     color:${COLORS.mirage};
+    width:250px;
     font-size:20px;
     font-weight:600;
     text-align:center;
@@ -56,7 +57,7 @@ export const CardTitle = styled.span`
     background-color:${COLORS.white};
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     padding:5px 10px;
-    border-radius:5px;
+    border-radius:10px;
     @media (max-width: 650px) {
         font-size:20px;
   }

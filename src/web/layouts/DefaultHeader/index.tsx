@@ -16,11 +16,13 @@ import {
   TitleMenuDrawer,
   TitlesHeader,
 } from "./styles";
+import { useRouter } from "next/router";
 
 const logo = require("../../../../public/images/logo_cut.png");
 
 export const DefaultHeader = () => {
   const [drawer, setDrawer] = useState<null | HTMLElement>(null);
+  const router = useRouter();
 
   const openDrawer = drawer !== null;
 
@@ -34,6 +36,10 @@ export const DefaultHeader = () => {
 
   function onTapMenu() {
     alert("Em Construção");
+  }
+
+  function onTapServicesPage() {
+    router.push("/servicos-prestados");
   }
 
   return (
@@ -59,7 +65,7 @@ export const DefaultHeader = () => {
             <TitlesHeader>HOME</TitlesHeader>
           </HolderTitleIcon>
 
-          <HolderTitleIcon onClick={onTapMenu}>
+          <HolderTitleIcon onClick={onTapServicesPage}>
             <PrimaryIcon
               size={"18px"}
               icon={IconsEnum.SERVICES_ICON}

@@ -21,13 +21,13 @@ export const FaqSectionHolder = styled.div`
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    padding-top: 100px;
-    padding-bottom:100px;
+    padding-top: 200px;
+    padding-bottom:200px;
     padding-left: clamp(1rem, 10.42vw, 12.5rem);
     padding-right: clamp(1rem, 10.42vw, 12.5rem);
     @media (max-width: 599px) {
-    padding-top: 50px;
-    padding-bottom:50px;
+    padding-top: 100px;
+    padding-bottom:100px;
     padding-left:10px;
     padding-right:10px;
   }
@@ -64,11 +64,12 @@ export const TitleFaqScreen = styled.span`
 `;
 
 export const FaqTitle = styled.span`
+color:${COLORS.parsley};
     font-size:16px;
-    font-weight:600;
+    font-weight:700;
 `; 
 
 export const FaqDescription = styled.span`
     font-size:14px;
-    font-weight:400;
+    font-weight:500;
 `; 

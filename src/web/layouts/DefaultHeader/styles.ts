@@ -27,10 +27,6 @@ export const HeaderContainer = styled.div`
     align-items: center;
     width:100%;
     height:100%;
-    @media (max-width: 599px) {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 `;
 
 export const HolderMenuIcon = styled.div`
@@ -76,7 +72,7 @@ export const HolderTitleIcon = styled.div`
   bottom: 0;
   content: "";
   display: block;
-  height: 2px;
+  height: 1px;
   left: 50%;
   position: absolute;
   background: black;

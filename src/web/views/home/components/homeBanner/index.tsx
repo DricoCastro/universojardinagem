@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import { PrimaryButton } from "../../../../components/PrimaryButton";
 import {
   Blur,
@@ -12,6 +13,7 @@ import {
 const ImageBackground = "/images/homeBackground.jpg";
 
 export const HomeBanner = () => {
+  const router = useRouter();
   function InProgress() {
     alert("Em Progresso");
   }
@@ -35,6 +37,7 @@ export const HomeBanner = () => {
           </DescriptionCardTop>
           <HolderButton>
             <PrimaryButton
+              // onClick={() => router.push("/painel/pedidos")}
               onClick={InProgress}
               text="Confira nossos trabalhos"
             />
