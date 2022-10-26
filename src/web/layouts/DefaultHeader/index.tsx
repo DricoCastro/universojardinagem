@@ -38,6 +38,10 @@ export const DefaultHeader = () => {
     alert("Em Construção");
   }
 
+  function onTapHomePage() {
+    router.push("/");
+  }
+
   function onTapServicesPage() {
     router.push("/servicos-prestados");
   }
@@ -47,7 +51,7 @@ export const DefaultHeader = () => {
       <HeaderContainer>
         <HolderLogoHeader>
           <Image
-            onClick={onTapMenu}
+            onClick={onTapHomePage}
             style={{ cursor: "pointer" }}
             src={logo}
             alt="logoHeader"
@@ -56,7 +60,7 @@ export const DefaultHeader = () => {
           />
         </HolderLogoHeader>
         <HolderTitlesHeader>
-          <HolderTitleIcon onClick={onTapMenu}>
+          <HolderTitleIcon onClick={onTapHomePage}>
             <PrimaryIcon
               size={"18px"}
               icon={IconsEnum.HOME_ICON}

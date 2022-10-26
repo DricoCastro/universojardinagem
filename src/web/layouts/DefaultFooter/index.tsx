@@ -22,12 +22,16 @@ function onTapMenu() {
 }
 
 export const DeafultFooter = () => {
+  const router = useRouter();
+  function onTapHomePage() {
+    router.push("/");
+  }
   return (
     <HomeFooterHolder>
       <PanelFooterContainer>
         <PanelFooterTopContainer>
           <Image
-            onClick={onTapMenu}
+            onClick={onTapHomePage}
             style={{ cursor: "pointer" }}
             src={logo}
             alt="logoHeader"

@@ -46,7 +46,7 @@ export const ServicesPage = () => {
       </ServicesContainer>
       <Divider
         style={{
-          backgroundColor: `${COLORS.chelsea}`,
+          backgroundColor: `${COLORS.celtic}`,
           width: "100%",
           height: "2px",
         }}
@@ -75,7 +75,7 @@ export const ServicesPage = () => {
       </ServicesContainer>
       <Divider
         style={{
-          backgroundColor: `${COLORS.chelsea}`,
+          backgroundColor: `${COLORS.celtic}`,
           width: "100%",
           height: "2px",
         }}
@@ -104,7 +104,7 @@ export const ServicesPage = () => {
       </ServicesContainer>
       <Divider
         style={{
-          backgroundColor: `${COLORS.chelsea}`,
+          backgroundColor: `${COLORS.celtic}`,
           width: "100%",
           height: "2px",
         }}
@@ -133,7 +133,7 @@ export const ServicesPage = () => {
       </ServicesContainer>
       <Divider
         style={{
-          backgroundColor: `${COLORS.chelsea}`,
+          backgroundColor: `${COLORS.celtic}`,
           width: "100%",
           height: "2px",
         }}
