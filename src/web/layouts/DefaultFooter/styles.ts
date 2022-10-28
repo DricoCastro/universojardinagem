@@ -13,15 +13,16 @@ export const HomeFooterHolder = styled.div`
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    @media (max-width: 499px) {
+        padding-bottom:80px;
+        padding-top:80px;
+    }
 `;
 
+
 export const PanelFooterContainer = styled.div`
-    max-width: 1300px;
+    width:100%;
     padding-top: clamp(2.60vw, 2.60vw, 3.13rem);
-    min-width: 67.71vw;
-    @media (max-width: 1049px) {
-        padding: clamp(4.17vw, 4.17vw, 5.00rem)  clamp(6.75vw, 6.75vw, 1.75rem) 0 clamp(6.75vw, 6.75vw, 1.75rem);;
-    }
 `;
 
 
@@ -93,6 +94,7 @@ export const PanelFooterBottomSocialMediaContainer = styled.div`
     @media (max-width: 1049px) {
         margin-top:20px;
     }
+   
 `;
 
 export const PanelFooterBottomSocialMediaButtonContainer = styled.div`

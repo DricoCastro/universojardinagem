@@ -13,6 +13,7 @@ import {
   PanelFooterTopContainer,
 } from "./styles";
 import { COLORS } from "../../../../utils/colors";
+import { useRouter } from "next/router";
 
 const logo = require("../../../../public/images/logo_cut.png");
 
@@ -21,12 +22,16 @@ function onTapMenu() {
 }
 
 export const DeafultFooter = () => {
+  const router = useRouter();
+  function onTapHomePage() {
+    router.push("/");
+  }
   return (
     <HomeFooterHolder>
       <PanelFooterContainer>
         <PanelFooterTopContainer>
           <Image
-            onClick={onTapMenu}
+            onClick={onTapHomePage}
             style={{ cursor: "pointer" }}
             src={logo}
             alt="logoHeader"
@@ -41,7 +46,7 @@ export const DeafultFooter = () => {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/">Serviços</Link>
+              <Link href="/servicos-prestados">Serviços</Link>
             </li>
             <li>
               <Link href="/">Portfólio</Link>

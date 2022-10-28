@@ -16,11 +16,13 @@ import {
   TitleMenuDrawer,
   TitlesHeader,
 } from "./styles";
+import { useRouter } from "next/router";
 
 const logo = require("../../../../public/images/logo_cut.png");
 
 export const DefaultHeader = () => {
   const [drawer, setDrawer] = useState<null | HTMLElement>(null);
+  const router = useRouter();
 
   const openDrawer = drawer !== null;
 
@@ -36,12 +38,20 @@ export const DefaultHeader = () => {
     alert("Em Construção");
   }
 
+  function onTapHomePage() {
+    router.push("/");
+  }
+
+  function onTapServicesPage() {
+    router.push("/servicos-prestados");
+  }
+
   return (
     <HomeHeaderHolder>
       <HeaderContainer>
         <HolderLogoHeader>
           <Image
-            onClick={onTapMenu}
+            onClick={onTapHomePage}
             style={{ cursor: "pointer" }}
             src={logo}
             alt="logoHeader"
@@ -50,7 +60,7 @@ export const DefaultHeader = () => {
           />
         </HolderLogoHeader>
         <HolderTitlesHeader>
-          <HolderTitleIcon onClick={onTapMenu}>
+          <HolderTitleIcon onClick={onTapHomePage}>
             <PrimaryIcon
               size={"18px"}
               icon={IconsEnum.HOME_ICON}
@@ -59,7 +69,7 @@ export const DefaultHeader = () => {
             <TitlesHeader>HOME</TitlesHeader>
           </HolderTitleIcon>
 
-          <HolderTitleIcon onClick={onTapMenu}>
+          <HolderTitleIcon onClick={onTapServicesPage}>
             <PrimaryIcon
               size={"18px"}
               icon={IconsEnum.SERVICES_ICON}
@@ -151,7 +161,7 @@ export const DefaultHeader = () => {
           anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
         >
           <div>
-            <MenuItemStyledComponent onClick={onTapMenu}>
+            <MenuItemStyledComponent onClick={onTapHomePage}>
               <PrimaryIcon
                 size={"18px"}
                 icon={IconsEnum.HOME_ICON}
@@ -162,7 +172,7 @@ export const DefaultHeader = () => {
 
             <Divider style={{ width: "200px" }} />
 
-            <MenuItemStyledComponent onClick={onTapMenu}>
+            <MenuItemStyledComponent onClick={onTapServicesPage}>
               <PrimaryIcon
                 size={"18px"}
                 icon={IconsEnum.SERVICES_ICON}

@@ -30,10 +30,11 @@ export const EventBannerStyle = styled.div<EventBannerContainerProps>`
   justify-content:top;
   @media (max-width: 799px) {
   padding-bottom:90px;
+  background-color: rgba(0,0,0, 0.2);
   }
   @media (max-width: 599px) {
-  padding-left:10px;
-  padding-right:10px;
+  padding-left:20px;
+  padding-right:20px;
   padding-bottom:90px;
   }
  `;
@@ -84,6 +85,9 @@ export const SubTitleCardTop = styled.a`
   @media (max-width: 900px) {
   font-size:18px;
   }
+  @media (max-width: 799px) {
+  line-height:22px; 
+  }
   @media (max-width: 499px) {
   font-size:16px;
   }
@@ -103,7 +107,7 @@ export const DescriptionCardTop = styled.a`
   font-size:16px;
   }
   @media (max-width: 799px) {
-  background-color: rgba(0,0,0, 0.4);
+  margin-top:15px;
   }
   @media (max-width: 499px) {
   font-size:14px;

@@ -4,27 +4,34 @@ import "slick-carousel/slick/slick-theme.css";
 import services from "./data";
 import styles from "./StylesArrow.module.css";
 import clsx from "clsx";
-
+import { useRouter } from "next/router";
 import {
   HolderCarousel,
   PageHolder,
   HolderCard,
   Card,
   CardTitle,
+  HolderImage,
 } from "./styles";
 import Image from "next/image";
 
 export default function ServicesCategories() {
+  const router = useRouter();
+  function onTapServicesPage() {
+    router.push("/servicos-prestados");
+  }
   const servicesInfo = services.map((service, i) => (
-    <HolderCard key={i}>
+    <HolderCard onClick={onTapServicesPage} key={i}>
       <Card>
-        <Image
-          width={200}
-          height={200}
-          style={{ borderRadius: "10px" }}
-          src={service.image}
-          alt="serviceImage"
-        ></Image>
+        <HolderImage>
+          <Image
+            width={250}
+            height={250}
+            style={{ borderRadius: "10px" }}
+            src={service.image}
+            alt="serviceImage"
+          />
+        </HolderImage>
         <CardTitle>{service.title}</CardTitle>
       </Card>
     </HolderCard>

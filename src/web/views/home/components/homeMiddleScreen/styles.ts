@@ -26,7 +26,7 @@ export const Blur = styled.div`
     justify-content:center;
     color:${COLORS.white};
     @media (max-width: 650px) {
-        padding-bottom: 300px;
+    padding-bottom: 300px;
   }
   
 `;
@@ -35,11 +35,9 @@ export const HolderTitleMiddleScreen = styled.div`
     margin-top:30px;
     display:flex;
     flex-direction:column;
+    align-items:center;
     @media (max-width: 599px) {
-   
     width:100%;
-    padding-left:10px;
-    padding-right:10px; 
 }
 `;
 
@@ -55,7 +53,7 @@ export const TitleMiddleScreen = styled.span`
     }
     @media (max-width: 499px) {
     width:100%;
-    font-size:20px;
+    font-size:24px;
     }
     a{
     text-decoration:underline 3px solid ${COLORS.crete};
@@ -75,6 +73,6 @@ export const SubTitleMiddleScreen = styled.a`
     }
     @media (max-width: 499px) {
     width:100%;
-    font-size:20px;
+    font-size:24px;
     }
 `;
