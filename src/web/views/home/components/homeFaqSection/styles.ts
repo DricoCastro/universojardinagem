@@ -28,8 +28,8 @@ export const FaqSectionHolder = styled.div`
     @media (max-width: 599px) {
     padding-top: 100px;
     padding-bottom:100px;
-    padding-left:10px;
-    padding-right:10px;
+    padding-left:20px;
+    padding-right:20px;
   }
 `; 
 
@@ -39,8 +39,8 @@ export const HolderTitleFaqScreen = styled.div`
     flex-direction:column;
     @media (max-width: 599px) {
     width:100%;
-    padding-left:10px;
-    padding-right:10px; 
+    padding-left:20px;
+    padding-right:20px; 
 }
 `;
 

@@ -13,7 +13,12 @@ export const HomeFooterHolder = styled.div`
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    @media (max-width: 499px) {
+        padding-bottom:80px;
+        padding-top:80px;
+    }
 `;
+
 
 export const PanelFooterContainer = styled.div`
     width:100%;
@@ -89,6 +94,7 @@ export const PanelFooterBottomSocialMediaContainer = styled.div`
     @media (max-width: 1049px) {
         margin-top:20px;
     }
+   
 `;
 
 export const PanelFooterBottomSocialMediaButtonContainer = styled.div`

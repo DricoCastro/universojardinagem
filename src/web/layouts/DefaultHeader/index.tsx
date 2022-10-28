@@ -161,7 +161,7 @@ export const DefaultHeader = () => {
           anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
         >
           <div>
-            <MenuItemStyledComponent onClick={onTapMenu}>
+            <MenuItemStyledComponent onClick={onTapHomePage}>
               <PrimaryIcon
                 size={"18px"}
                 icon={IconsEnum.HOME_ICON}
@@ -172,7 +172,7 @@ export const DefaultHeader = () => {
 
             <Divider style={{ width: "200px" }} />
 
-            <MenuItemStyledComponent onClick={onTapMenu}>
+            <MenuItemStyledComponent onClick={onTapServicesPage}>
               <PrimaryIcon
                 size={"18px"}
                 icon={IconsEnum.SERVICES_ICON}

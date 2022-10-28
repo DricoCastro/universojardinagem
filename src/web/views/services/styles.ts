@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { COLORS } from "../../../../utils/colors";
+import { PrimaryButtonContainer } from "../../components/PrimaryButton/styles";
 
 export const ServicesPageHolder = styled.div`
     background-color:${COLORS.killarney};
@@ -14,8 +15,8 @@ export const ServicesPageHolder = styled.div`
     padding-bottom:60px;
     row-gap:80px;
     @media (max-width: 599px) {
-    padding-left:10px;
-    padding-right:10px;
+    padding-left:20px;
+    padding-right:20px;
   }
 `;
 
@@ -56,6 +57,9 @@ export const HolderServicesText = styled.div`
         align-items:center;
         margin-bottom:40px;
     }
+    ${PrimaryButtonContainer}{
+        background-color:${COLORS.apple};
+    }
 `;
 
 
@@ -85,6 +89,7 @@ export const ServicesDescription = styled.span`
     line-height:25px;
     color:${COLORS.white};
     padding-top:30px;
+    margin-bottom:30px;
     @media (max-width: 1050px) {
     font-size:18px;
     text-align:center;

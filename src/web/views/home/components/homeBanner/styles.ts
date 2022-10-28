@@ -33,8 +33,8 @@ export const EventBannerStyle = styled.div<EventBannerContainerProps>`
   background-color: rgba(0,0,0, 0.2);
   }
   @media (max-width: 599px) {
-  padding-left:10px;
-  padding-right:10px;
+  padding-left:20px;
+  padding-right:20px;
   padding-bottom:90px;
   }
  `;

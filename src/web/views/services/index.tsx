@@ -1,6 +1,8 @@
 import { Divider } from "@mui/material";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { COLORS } from "../../../../utils/colors";
+import { PrimaryButton } from "../../components/PrimaryButton";
 import {
   ServicesPageHolder,
   TitleServicesPage,
@@ -17,8 +19,39 @@ const podeIcon = "/icons/pruning.svg";
 const plantingIcon = "/icons/planting.svg";
 const garderingIcon = "/icons/gardering.svg";
 const project3dIcon = "/icons/3d-project.svg";
+const brokeLine: string = "%0A";
 
 export const ServicesPage = () => {
+  const router = useRouter();
+  function wppTextPaisagism() {
+    router.push(
+      `https://api.whatsapp.com/send?phone=5531982738657&text=😀 Olá,${brokeLine}Vim pelo site e gostaria de solicitar um orçamento do serviço de *Paisagismo*.`
+    );
+  }
+
+  function wppTextPoda() {
+    router.push(
+      `https://api.whatsapp.com/send?phone=5531982738657&text=😀 Olá,${brokeLine}Vim pelo site e gostaria de solicitar um orçamento do serviço de *Poda*.`
+    );
+  }
+
+  function wppTextPlantio() {
+    router.push(
+      `https://api.whatsapp.com/send?phone=5531982738657&text=😀 Olá,${brokeLine}Vim pelo site e gostaria de solicitar um orçamento do serviço de *Plantio*.`
+    );
+  }
+
+  function wppTextJardinagem() {
+    router.push(
+      `https://api.whatsapp.com/send?phone=5531982738657&text=😀 Olá,${brokeLine}Vim pelo site e gostaria de solicitar um orçamento do serviço de *Jardinagem*.`
+    );
+  }
+
+  function wppTextPojeto3d() {
+    router.push(
+      `https://api.whatsapp.com/send?phone=5531982738657&text=😀 Olá,${brokeLine}Vim pelo site e gostaria de solicitar um orçamento do serviço de *Projeto 3D personalizado*.`
+    );
+  }
   return (
     <ServicesPageHolder>
       <TitleServicesPage>SERVIÇOS</TitleServicesPage>
@@ -35,6 +68,10 @@ export const ServicesPage = () => {
               tellus. Suspendisse bibendum elementum justo et molestie. Sed non
               imperdiet dui. Vivamus sed ex neque.
             </ServicesDescription>
+            <PrimaryButton
+              onClick={wppTextPaisagism}
+              text="Solicitar Orçamento"
+            />
           </HolderServicesText>
           <Image
             src={paisagismIcon}
@@ -70,6 +107,7 @@ export const ServicesPage = () => {
               tellus. Suspendisse bibendum elementum justo et molestie. Sed non
               imperdiet dui. Vivamus sed ex neque.
             </ServicesDescription>
+            <PrimaryButton onClick={wppTextPoda} text="Solicitar Orçamento" />
           </HolderServicesText>
         </ServicesContainerIconAndTextReverse>
       </ServicesContainer>
@@ -93,6 +131,10 @@ export const ServicesPage = () => {
               tellus. Suspendisse bibendum elementum justo et molestie. Sed non
               imperdiet dui. Vivamus sed ex neque.
             </ServicesDescription>
+            <PrimaryButton
+              onClick={wppTextPlantio}
+              text="Solicitar Orçamento"
+            />
           </HolderServicesText>
           <Image
             src={plantingIcon}
@@ -128,6 +170,10 @@ export const ServicesPage = () => {
               tellus. Suspendisse bibendum elementum justo et molestie. Sed non
               imperdiet dui. Vivamus sed ex neque.
             </ServicesDescription>
+            <PrimaryButton
+              onClick={wppTextJardinagem}
+              text="Solicitar Orçamento"
+            />
           </HolderServicesText>
         </ServicesContainerIconAndTextReverse>
       </ServicesContainer>
@@ -151,6 +197,10 @@ export const ServicesPage = () => {
               tellus. Suspendisse bibendum elementum justo et molestie. Sed non
               imperdiet dui. Vivamus sed ex neque.
             </ServicesDescription>
+            <PrimaryButton
+              onClick={wppTextPojeto3d}
+              text="Solicitar Orçamento"
+            />
           </HolderServicesText>
           <Image
             src={project3dIcon}
